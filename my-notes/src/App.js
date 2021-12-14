@@ -1,16 +1,18 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Home from './Pages/Home';
-import Login from './Pages/Login';
-import Register from './Pages/Register';
+import HomePage from './Pages/Home';
+import LoginPage from './Pages/Login';
+import RegisterPage from './Pages/Register';
+import WallNotes from './Pages/WallNotes';
 
 export default function App() {
     return (
         <BrowserRouter>
         <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/login" element={<Login/>} />
-            <Route path="/register" element={<Register/>} />
+            <Route path="/" element={<HomePage/>} />
+            <Route path="/login" element={<LoginPage/>} />
+            <Route path="/register" element={<RegisterPage/>} />
+            <Route path="/wallnotes" element={<WallNotes/>} />
         </Routes>
         </BrowserRouter>
     )
