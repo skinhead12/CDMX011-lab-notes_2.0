@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 function RegisterPage() {
     return ( 
         <div>
@@ -7,6 +9,15 @@ function RegisterPage() {
             <input type="password" placeholder="Password"></input>
             <input type="password" placeholder="Confirm Password"></input>
             <input type="submit" placeholder="Submit"></input>
+            <select>User Type
+                <option>
+                    Premium
+                </option>
+                <option>
+                    Standard
+                </option>
+            </select>
+            <NavLink to="/login">Login</NavLink>
         </form>
     </div>
      );
