@@ -1,14 +1,16 @@
 import { NavLink } from "react-router-dom";
 
+import './forms.css';
+
 function HomePage() {
     return ( 
-        <div>
-            <h2>Welcome</h2>
+        <div className="Container-btns">
+            <h2 className="tittle-one">Welcome</h2>
             <NavLink to="/login">
-            <button>Login</button>
+            <button className="btn-login">Login</button>
             </NavLink>
             <NavLink to="/register">
-            <button>Register</button>
+            <button className="btn-register">Register</button>
             </NavLink>
         </div>
      );
