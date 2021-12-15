@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 import './forms.css';
 
-function HomePage() {
+const HomePage = () => {
     return ( 
         <div className="Container-btns">
             <h2 className="tittle-one">Welcome</h2>

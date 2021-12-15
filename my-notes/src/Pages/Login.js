@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
 
-function LoginPage() {
+const  LoginPage  = () => {
     return ( 
         <div>
             <form>
@@ -11,6 +11,7 @@ function LoginPage() {
                 <input type="submit" placeholder="Submit"></input>
                 <NavLink to="/register">Register</NavLink>
             </form>
+            <NavLink to="/"><button>back</button></NavLink> 
         </div>
      );
 }

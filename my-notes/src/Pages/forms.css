@@ -1,8 +1,9 @@
 .Container-btns{
-    border-style: dotted;
+    border-style: solid;
     border-radius: 5%;
     display: flex;
     flex-flow: column;
     align-items: center;
     align-content: space-between;
 }
+
